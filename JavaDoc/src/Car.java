@@ -2,6 +2,8 @@ public class Car {
    
 
 
+    //https://github.com/AlejandroDurillo/JavadocProyect.git
+
     /**
      * @param make
      * @param model
@@ -23,9 +25,6 @@ public class Car {
     }
 
     
-    /** 
-     * @return String
-     */
     
     /**
      * @param make devuelve la marca del coche
@@ -34,48 +33,48 @@ public class Car {
     public String getMake() {
         return make;
     }
-    /* Asegura que la marca es la marca */
     public void setMake(String make) {
         this.make = make;
     }
 
   /**
-     * @param model devuelve el modelo del coche
+     * @param model obtiene el modelo del coche devolviendo el modelo
      * @return
      */
     public String getModel() {
         return model;
     }
-    /* Asegura e modelo del coche */
+    
     public void setModel(String model) {
         this.model = model;
     }
 
     /**
-     * @param year devuelve el año del coche
+     * @param year obtiene el año del coche, devolviendo el precio
      * @return
      */
     public int getYear() {
         return year;
     }
-    /*Asegura el año del coche */
+   
     public void setYear(int year) {
         this.year = year;
     }
 
     /**
-     * @param price devuelve el precio del coche
+     * @param price obtiene el precio del coche, devolviendo el precio del mismo
      * @return
      */
     public double getPrice() {
         return price;
     }
-    /*Asegura el precio del coche */
+    
     public void setPrice(double price) {
         this.price = price;
     }
+   
     /**
-     * @param carDescription() devuelve la descripción del coche, uniendo año, marca, modelo y precio, en ese orden
+     * Muestra la descripción del coche aportando año, marca, modelo y precio
      * @return
      */
     public String carDescription() {
@@ -83,14 +82,15 @@ public class Car {
     }
 
     @Override
-    /*Devuelve dicha descripción del coche */
+    
     public String toString() {
         return carDescription();
     }
 
     /**
-     * @param main instancia a Car para poder añadir la marca, el modelo, el año y el precio y imprime la funcion car
-     * @return
+     * Se genera el objeto car, da la opcion a poner los datos puestos, la marca, el modelo, el año y el precio
+     * y devuelve el mensaje con los datos introducidos
+     * @param args
      */
     public static void main(String[] args) {
         Car car = new Car("Toyota", "Corolla", 2025, 26800);
