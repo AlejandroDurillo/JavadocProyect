@@ -1,24 +1,9 @@
-
-
-
 public class Car {
-    /*
-
-    @author: Alejandro Durillo Vargas
-   
-    String make es la marca del coche
-    String model es el modelo del coche
-    int year es el año del coche
-    price te indica cuantp cuesta
-     */
     private String make;
     private String model;
     private int year;
     private double price;
 
-    /*
-    
-     */
     public Car(String make, String model, int year, double price) {
         this.make = make;
         this.model = model;
