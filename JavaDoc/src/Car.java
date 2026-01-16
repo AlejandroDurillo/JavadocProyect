@@ -1,4 +1,6 @@
 public class Car {
+
+    /*  */
     private String make;
     private String model;
     private int year;
@@ -11,6 +13,11 @@ public class Car {
         this.price = price;
     }
 
+    
+    /** 
+     * @return String
+     */
+    
     public String getMake() {
         return make;
     }
